@@ -1,0 +1,14 @@
+services:
+  - mongodb
+language: node_js
+node_js:
+  - "stable"
+  - "0.12"
+env:
+  - NODE_ENV="development"
+  - NODE_ENV="production";SESSION_SECRET="la li lu le lo"
+matrix:
+  exclude:
+    - node_js: "0.12"
+      env: NODE_ENV="development"
+script: gulp travis

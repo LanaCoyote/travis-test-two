@@ -19,7 +19,6 @@ var notify = require('gulp-notify');
 
 // Development tasks
 // --------------------------------------------------------------
-
 gulp.task('reloadCSS', function () {
     return gulp.src('./public/style.css').pipe(livereload());
 });
